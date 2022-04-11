@@ -6,7 +6,7 @@
 
 ## Install Docker:
 - I'm using my docker vm to do this, once I figure this out, I might make some more vms to try out swarm
-![](Pics/20220408173607.png)  
+![](pics/20220408173607.png)  
 
 - Not good, hope this is old
 - found this:
@@ -40,14 +40,14 @@ sudo yum remove docker \
     https://download.docker.com/linux/rhel/docker-ce.repo
 ```
 
---> ![](Pics/20220408174741.png)  
+--> ![](pics/20220408174741.png)  
 --> No problems
 
 ```
 sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
-![](Pics/20220408175105.png)  
+![](pics/20220408175105.png)  
 
 --> Expected, never works the first time
 
@@ -90,7 +90,7 @@ systemctl start docker
 docker run hello-world
 ```
 
-![](Pics/20220408181145.png)  
+![](pics/20220408181145.png)  
 
 --> looks like it is working despite a few warnings in the service log. Going to go with it since I'm not doing anything heavy just apache.
 

@@ -91,11 +91,11 @@ virt-install \
 --disk size=25,bus=virtio,format=qcow2,path=/mnt/vm_space/virtual/RHEL85.qcow2
 ```
 
-![](Pics/20220408135837.png)  
+![](pics/20220408135837.png)  
 
 - waiting for install, thus I need to VNC into box... :
 
-![](Pics/20220408140444.png)  
+![](pics/20220408140444.png)  
 
 - Now proceeding with install
 - Mininmal Install Selected
@@ -103,7 +103,7 @@ virt-install \
 - User created: bart  
 - installing:
 
-![](Pics/20220408143337.png)  
+![](pics/20220408143337.png)  
 
 - Install Complete, rebooting
 
@@ -119,7 +119,7 @@ net-dhcp-leases default
 
 - Preparing the Machine for cloning with tutorial above
   - using "virt-sysprep", this seem to have worked:
-  ![](Pics/20220408151644.png)  
+  ![](pics/20220408151644.png)  
   - Now Performing the actual clones
   - Making Two Clones for Now
 
@@ -128,7 +128,7 @@ net-dhcp-leases default
 
   ```
 
-  ![](Pics/20220408152317.png)  
+  ![](pics/20220408152317.png)  
 
   - Clones completed, post config:
   ```

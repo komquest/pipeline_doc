@@ -14,11 +14,11 @@
   - Easy install with documentation for RHEL, basically you add the jenkins repo, install openjdk and then `yum install jenkins`
   - Starting Jenkins, again doc provides this easy.. Done, started with no issue
   - Starting Post Intall Conifg:
-  ![](Pics/20220410122205.png)  
-  ![](Pics/20220410122704.png)  
-  ![](Pics/20220410122803.png)  
+  ![](pics/20220410122205.png)  
+  ![](pics/20220410122704.png)  
+  ![](pics/20220410122803.png)  
   --> Dev Environment so this will suffice
-  ![](Pics/20220410122853.png)  
+  ![](pics/20220410122853.png)  
 
   - Jenkins Install Complete, verified that both the "Credentials" and the "Credentials Binding" plugins were installed
 
@@ -84,4 +84,4 @@ komquest/webserver:tagname
 
 - COMPLETE, Github --> Build --> Docker Hub:
 
-![](Pics/20220411010755.png)  
+![](pics/20220411010755.png)  

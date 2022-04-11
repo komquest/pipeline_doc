@@ -246,31 +246,31 @@ https://plugins.jenkins.io/github/#GitHubPlugin-GitHubhooktriggerforGITScmpollin
 
 1. Go to "Manage Jenkins" --> Configure System:
 
-    ![](Pics/20220410145833.png)
+    ![](pics/20220410145833.png)
 
 2. Go to "GitHub" --> "GitHub Servers"
 
-    ![](Pics/20220410150039.png)  
+    ![](pics/20220410150039.png)  
 
 3. Insert your Name, leave API URL:
 
-    ![](Pics/20220410150225.png)  
+    ![](pics/20220410150225.png)  
 
 4. Create Github OAuth Token, make sure it has at least "admin:org_hook" scope, note you can use the git-hub's plugin to auto generate an auth token for you, but it looks skechy, thus going on github is better
 
 5. Under "Credentials" enter your Token as a "Secret Text" cred:
 
-    ![](Pics/20220410151830.png)  
+    ![](pics/20220410151830.png)  
 
 6. Now Test Connect, you should see "Credentials verified":
 
 --> By they, don't worry about your rate limit, it refreshes hourly 
 
-    ![](Pics/20220410151919.png)  
+    ![](pics/20220410151919.png)  
 
 7. Go to the job you want to setup, under "Configuration" --> "Build Triggers" you should select "GitHub hook trigger for GITScm polling"
 
-    ![](Pics/20220410153434.png)  
+    ![](pics/20220410153434.png)  
 
 8. As per the doc link above this is smart enough to only build if the current selected repo for the job updates. It is true that the auth token can be use for all repos under the user.
 
@@ -281,7 +281,7 @@ https://stackoverflow.com/questions/61105368/how-to-use-github-personal-access-t
 
 0. Create your personal access token, these permisisons worked for me:
 
-    ![](Pics/20220410160948.png)  
+    ![](pics/20220410160948.png)  
 1. Build a new MultiBranch Pipeline in Jenkins with server type: Github
 2. Add this to your git url ("Repository HTTPS URL"): 
     ```
@@ -290,10 +290,10 @@ https://stackoverflow.com/questions/61105368/how-to-use-github-personal-access-t
 
 3. Do not select anything for your creds
 4. Modify Behaviors something like:
-    ![](Pics/20220410155827.png)  
+    ![](pics/20220410155827.png)  
 
 5. Also set "SCAN Repository Triggers":
-    ![](Pics/20220410215305.png)  
+    ![](pics/20220410215305.png)  
 
 6. The Multibranch pipe will now query github and look for changes after it's first inital build. I found from console output that Jenkins self Limits as to not overwhelm github, so each new commit might take around ~10 to build, thus watch your commits!
 
